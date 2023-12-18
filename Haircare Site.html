@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural Haircare</title>
+    <style>
+      body {
+        background: rgb(165, 95, 42);
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        width: 700px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid rgb(165, 95, 42);
+        background: white;
+        font-size: 15px;
+        border-radius: 6px;
+      }
+      button:hover{
+        background: rgb(165, 95, 42);
+        cursor: pointer;
+        color: white;
+      }
+      footer {
+        text-align: center;
+        margin: 13px;
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 600px;
+        background: rgb(203, 133, 59);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto
+      }
+      .theme-button {
+        font-size: 15px;
+        background-color: rgb(113, 63, 30);
+        color: white;
+        padding: 8px;
+      }
+      .theme-button:hover {
+        color: black;
+        background-color: white;
+      }
+      .natural-haircare-1 {
+        border-radius: 10px;
+        transition:all ease-in-out;
+      }
+      .natural-haircare-1:hover {
+        filter: contrast(75%);
+        transform: scale(1.01);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(300px, 300px);
+        grid-gap: 4px;
+      }
+      .grid img {
+        width: 100%
+      }
+      .dark {
+        background: black;
+        color: white;
+      }
+      .dark .container {
+        background: rgb(95, 95, 95)
+      }
+      .dark a {
+        color: white
+      }
+      .dark .theme-button {
+        background-color: black;
+        border-color: black;
+
+      }
+      .dark .theme-button:hover {
+        color: black;
+        background-color: white;
+        border-color: white;
+      }
+    </style>
+  </head>
+  <body>
+     <button class="theme-button">Dark Theme</button>
+    <div class= "container"> 
+    <h1>Natural Haircare</h1>
+    <h2>One of my favorite hobbies</h2>
+    <div class=" grid">
+    <a href = "https://en.wikipedia.org/wiki/Natural_hair_movement"
+    target = "_blank">
+    <img
+src="https://cdn.shopify.com/s/files/1/2132/5055/files/Black-Woman-brushing-her-hair.jpg?v=1600700788"
+    alt="pic2"
+    class = "natural-haircare-1"
+    />
+    </a>
+
+    <a href = "https://en.wikipedia.org/wiki/Natural_hair_movement"
+    target = "_blank">
+    <img
+      src="https://www.carolsdaughter.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-carolsdaughter-us-Library/default/dw212550df/images/blogs/oct-2020-the-ultimate-guide-to-detangling-natural-hair.jpg?sw=1536&q=70"
+      alt="pic2"
+      class = "natural-haircare-1"
+    />
+    </a>
+
+    <a href = "https://en.wikipedia.org/wiki/Natural_hair_movement"
+    target = "_blank">
+    <img
+      src="https://cdn.shopify.com/s/files/1/1363/5185/files/Resized_images_32_480x480.jpg?v=1609764141"
+      alt="pic3"
+      class = "natural-haircare-1"
+    />
+    </a>
+    </div>
+    <p>
+      Hair care is an overall term for hygiene and cosmetology involving the
+      hair which grows from the human scalp. Hair care routines differ according
+      to an individual's culture and the physical characteristics of one's hair.
+      The natural hair movement is a movement which aims to encourage people of
+      African descent to embrace their natural, afro-textured hair. It
+      originated in the United States during the 1960s, and resurged in
+      popularity in the 2000s.
+        <div> 
+        <a href="https://en.wikipedia.org/wiki/Natural_hair_movement">
+        Learn more on Wikipedia
+      </a> </div>
+    </p>
+    <button>Get Into Natural Haircare</button>
+    </div>
+    <footer>Coded by Asia McLemore</footer>
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+
+            if (body.classList.contains("dark")) {
+               body.classList.remove("dark"); 
+            } else {
+                body.classList.add("dark");
+            }
+        }
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>

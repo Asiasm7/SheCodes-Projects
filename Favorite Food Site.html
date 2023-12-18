@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 Project</title>
+    <style>
+      body {
+        background: linear-gradient(
+          243deg,
+          rgb(255, 253, 221) 13.4%,
+          rgb(248, 215, 215) 82.1%
+        );
+        width: 50%;
+        margin: 60px auto;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #d14d72;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #d14d72;
+        padding: 20px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border: 20px solid black;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #d14d72;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        text-align: center;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .learn-more {
+        display: block;
+        padding-top: 10px;
+        text-decoration: none;
+        color: #d14d72;
+        font-size: 11px;
+        text-align: center;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <h1>I love parfaits</h1>
+    <h2>Especially strawberry parfaits</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/494/original/Yogurt-Granola-Bowl-09.jpg?1687290561"
+      alt="Yogurt"
+      width="300px"
+    />
+    <p>
+      Parfait; meaning "perfect" is either of two types of dessert. In France,
+      where the dish originated, parfait is made by boiling cream, egg, sugar
+      and syrup to create a custard-like or meringue-like puree which is then
+      frozen. The American version consists of layers differentiated by the
+      inclusion of such ingredients as granola, nuts, yogurt and liqueurs,
+      topped off with fruits or whipped cream. The oldest known recipe dates
+      back to 1894.
+    </p>
+    <br />
+    <a
+      href="https://en.wikipedia.org/wiki/Parfait"
+      target="_blank"
+      class="learn-more"
+    >
+      Learn more on Wikipedia
+    </a>
+    <button class="buy-button">👉 Buy a Strawberry Parfait</button>
+    <div class="footer">This page was built by Asia McLemore</div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you" +
+            name +
+            "! We'll be in touch by email, meanwhile have lots of parfaits!" +
+            emoji
+        );
+      }
+
+      let buyButton = document.querySelector(".buyButton");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
